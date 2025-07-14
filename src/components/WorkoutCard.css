@@ -1,0 +1,49 @@
+.workout-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.workout-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.workout-card:hover {
+  transform: translateY(-4px);
+}
+
+.workout-card p {
+  margin: 0;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 140px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.workout-card h3 {
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #2b2b2b;
+}
+.workout-card {
+  width: 300px;
+  max-width: 100%;
+}
+

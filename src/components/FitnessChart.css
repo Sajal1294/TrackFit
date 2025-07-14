@@ -1,0 +1,56 @@
+.fitness-chart-container {
+  background: #f4edff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.fitness-chart-container h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.fitness-canvas {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+.fitness-chart-container {
+  position: relative;
+  width: 90%;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  z-index: 1;
+}
+
+/* Blurred background image with opacity */
+.fitness-chart-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/src/assets/7764882_3725828.jpg'); /* ← Update this path as needed */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;             /* semi-transparent */
+  filter: blur(8px);        /* blur effect */
+  z-index: 0;
+}
+
+/* Ensure content stays on top */
+.fitness-chart-container h3,
+.fitness-chart-container canvas {
+  position: relative;
+  z-index: 2;
+}
+
+

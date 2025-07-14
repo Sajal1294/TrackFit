@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+.location-controls {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.location-controls button {
+  padding: 0.6rem 1.2rem;
+  background: #008cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.location-controls button:hover {
+  background: #006fd1;
+}
+
+.location-summary {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.status {
+  background: #f2f7ff;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 700px;
+}
+
+.location-buttons {
+  margin-top: 0.6rem;
+}
+
+.location-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.location-buttons button:hover {
+  background-color: #005dc1;
+}
+
+.location-summary {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.location-buttons button {
+  padding: 0.6rem 1.2rem;
+  background-color: #4e6eff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.location-buttons button:hover {
+  background-color: #3a57d9;
+  transform: translateY(-2px);
+}
